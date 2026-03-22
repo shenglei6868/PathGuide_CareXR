@@ -219,16 +219,16 @@ export class UI extends BaseScriptComponent {
   }
 
   private hide(tr: Transform) {
-    const localPos = tr.getLocalPosition()
-    localPos.y = 10000
-    tr.setLocalPosition(localPos)
+    if (tr && !isNull(tr)) {
+      tr.getSceneObject().enabled = false
+    }
     this.backplateSo.enabled = false
   }
 
   private show(tr: Transform) {
-    const localPos = tr.getLocalPosition()
-    localPos.y = -5
-    tr.setLocalPosition(localPos)
+    if (tr && !isNull(tr)) {
+      tr.getSceneObject().enabled = true
+    }
     this.backplateSo.enabled = true
   }
 

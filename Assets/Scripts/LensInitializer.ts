@@ -97,10 +97,18 @@ export class LensInitializer extends BaseScriptComponent {
       cleanupHooks()
       this.pathMaker.start()
       
-      const remover = this.pathMaker.pathMade.add((data) => {
+      const remover = this.pathMaker.pathMade.add((data: any) => {
         remover() // 新建完成后触发
         
         // 我们不直接走寻路了，而是回到主页面，因为我们要退出来！！
+        // 清理掉还在场景中的起点和终点标志，避免它们在未加载时残留
+        if (data.startObject && !isNull(data.startObject)) {
+          data.startObject.destroy()
+        }
+        if (data.finishObject && !isNull(data.finishObject)) {
+          data.finishObject.destroy()
+        }
+
         this.startHomeState() 
       })
     })
