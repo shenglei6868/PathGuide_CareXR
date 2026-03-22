@@ -56,7 +56,7 @@ recordInput:
   options: 4
 recordTrackingData:
   type: bool
-  value: false
+  value: true
   options: 4
 resolutionScale:
   type: float
