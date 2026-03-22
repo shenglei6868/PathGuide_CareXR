@@ -149,6 +149,26 @@ export class PathWalker extends BaseScriptComponent {
     }
   }
 
+  public onStartCollisionEnter() {
+    if (this.state === 2 && this.isNavigationMode) {
+      if (this.isLoop && this.totalTimeWalking > 5.0) {
+        // 在环形导航中，走了一段时间后（大于5秒）再次碰到起点，视为到达。
+        SoundController.getInstance().playSound("onCompleteLap")
+        this.handleNavigationArrival()
+      }
+    }
+  }
+
+  public onFinishCollisionEnter() {
+    if (this.state === 2 && this.isNavigationMode && !this.isLoop) {
+      // 达到终点的时候播放一声“叮”
+      SoundController.getInstance().playSound("onCompleteLap")
+      
+      // 在直线导航中，碰到终点直接视为到达！
+      this.handleNavigationArrival()
+    }
+  }
+
   public onStartCollisionExit(dot: number) {
     if (dot > 0) {
       // We are in the direction of the start line
@@ -175,11 +195,11 @@ export class PathWalker extends BaseScriptComponent {
           this.startLineController.onIncrementLoop(this.lapCount + 1)
         } else {
           this.startLineController.onStartSprint()
-          this.finishLineController.onStartSprint()
+          if (this.finishLineController) this.finishLineController.onStartSprint()
         }
       } else if (this.state === 2) {
         if (this.isNavigationMode) {
-          this.handleNavigationArrival()
+          // Navigation mode is handled entirely by Enter events now! Avoid premature exit triggers.
           return
         }
         // walking
@@ -200,6 +220,7 @@ export class PathWalker extends BaseScriptComponent {
         if (this.isLoop) {
           // There is no use case for this
         } else {
+          if (this.isNavigationMode) return; // Prevent reverse finish in navigation mode
           // We are finishing reverse sprint
           this.timerScript.pause()
           this.isOutsideSprint = true
@@ -214,8 +235,7 @@ export class PathWalker extends BaseScriptComponent {
     if (dot > 0) {
       if (this.state === 2) {
         if (this.isNavigationMode) {
-          this.handleNavigationArrival()
-          return
+          return // handled by Enter event now
         }
         // We are finishing sprint
         this.timerScript.pause()
@@ -225,6 +245,7 @@ export class PathWalker extends BaseScriptComponent {
       }
     } else {
       if (this.state === 2) {
+        if (this.isNavigationMode) return;
         // We are re-entering reverse sprint
         SoundController.getInstance().playSound("onStartLap")
         this.isOutsideSprint = false
@@ -244,6 +265,11 @@ export class PathWalker extends BaseScriptComponent {
   }
 
   onSprintStartAreaCollision(reverseTrack: boolean) {
+    if (this.isNavigationMode) {
+      // 导航模式下绝对不允许调用反转轨道的发车区逻辑，防止终点起点偷偷调换位置
+      return;
+    }
+    
     if (!this.isLoop) {
       this.startLineController.onSprintStartAreaCollision()
       this.finishLineController.onSprintStartAreaCollision()
@@ -279,6 +305,8 @@ export class PathWalker extends BaseScriptComponent {
   }
 
   private reverseSprintTrackVisuals(str: string) {
+    if (this.isNavigationMode) return; // 导航模式下绝对禁止翻转视觉
+
     let reverseTrack = false
 
     if (str.includes("start") && !this.pathIsForwards) {
@@ -302,6 +330,8 @@ export class PathWalker extends BaseScriptComponent {
   private finishLineTr: Transform | null = null
 
   private handleNavigationArrival() {
+    if (this.state === 3) return; // 防止重复触发
+    this.state = 3;
     this.timerScript.pause()
     this.arrowSpawner.stop()
     this.uiScript.showArrivedUi()
@@ -428,6 +458,8 @@ export class PathWalker extends BaseScriptComponent {
   }
 
   private showUi() {
+    if (this.isNavigationMode) return; // 导航模式下不显示一直挂在脸上的 UI
+    
     switch (this.currentState) {
       case PathWalkerState.None:
         return

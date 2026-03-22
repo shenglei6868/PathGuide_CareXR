@@ -29,6 +29,12 @@ export class PathCollisionEvents extends BaseScriptComponent {
   public onCollisionEnter(e: CollisionEnterEventArgs) {
     if (e.collision.collider.isSame(this.camCol)) {
       this.enterPoint = this.camTr.getWorldPosition()
+
+      if (this.msg.includes("start")) {
+        this.pathWalker.onStartCollisionEnter()
+      } else if (this.msg.includes("finish")) {
+        this.pathWalker.onFinishCollisionEnter()
+      }
     }
   }
 

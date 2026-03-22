@@ -134,13 +134,13 @@ export class UI extends BaseScriptComponent {
     this.currentActiveTr = this.goToStartUiTr
     this.show(this.currentActiveTr)
     
-    // Automatically close it and show Home after 3 seconds
+    // Automatically close it and show Home after 5 seconds instead of 3
     const evt = this.createEvent("DelayedCallbackEvent")
     evt.bind(() => {
       this.hide(this.goToStartUiTr)
       this.endSessionClickedEvent.invoke()
     })
-    evt.reset(3.0)
+    evt.reset(5.0)
   }
 
   showGoToStartUi(distance: number) {

@@ -1,8 +1,10 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 1062
+    size: 1087
     values:
+      - ""
+      - 2D Art
       - 2D Art/TutorialUI
       - 2D Art/TutorialUI/Resources
       - 2D Art/TutorialUI/Resources/Fonts
@@ -19,36 +21,46 @@ CollapsedEntities:
       - 2D Art/TutorialUI/Resources/Textures/Text Texture OK.textTexture
       - 2D Art/TutorialUI/Resources/Textures/r_button.png
       - 2D Art/TutorialUI/Resources/Textures/tutorial_BG_mask.png
+      - 2D Art/UI
+      - 2D Art/UI/Resources
       - 2D Art/UI/Resources/Fonts
       - 2D Art/UI/Resources/Fonts/AvenirNextLTPro-Bold.otf
       - 2D Art/UI/Resources/Fonts/AvenirNextLTPro-BoldIt.otf
       - 2D Art/UI/Resources/Fonts/AvenirNextLTPro-Medium.otf
       - 2D Art/UI/Resources/Fonts/AvenirNextLTPro-Regular.otf
+      - 2D Art/UI/Resources/Materials
       - 2D Art/UI/Resources/Materials/Image 1.mat
       - 2D Art/UI/Resources/Materials/Image.mat
+      - 2D Art/UI/Resources/Materials/Logo.mat
       - 2D Art/UI/Resources/Materials/Pointer.mat
       - 2D Art/UI/Resources/Materials/ProgressBar.mat
       - 2D Art/UI/Resources/Materials/cButtonV.mat
       - 2D Art/UI/Resources/Materials/cButtonX.mat
+      - 2D Art/UI/Resources/Materials/iconV.mat
       - 2D Art/UI/Resources/Materials/menu_button4.mat
       - 2D Art/UI/Resources/Materials/rButtonEnd.mat
       - 2D Art/UI/Resources/Meshes
       - 2D Art/UI/Resources/Meshes/Plane.mesh
+      - 2D Art/UI/Resources/Shaders
       - 2D Art/UI/Resources/Shaders/cbuttons.ss_graph
       - 2D Art/UI/Resources/Shaders/line.ss_graph
+      - 2D Art/UI/Resources/Shaders/logo.ss_graph
       - 2D Art/UI/Resources/Shaders/mbuttons.ss_graph
       - 2D Art/UI/Resources/Shaders/progressBar.ss_graph
       - 2D Art/UI/Resources/Shaders/rbuttons.ss_graph
+      - 2D Art/UI/Resources/Textures
       - 2D Art/UI/Resources/Textures/Text Texture end.textTexture
       - 2D Art/UI/Resources/Textures/c_button.png
       - 2D Art/UI/Resources/Textures/iconV.png
       - 2D Art/UI/Resources/Textures/iconX.png
+      - 2D Art/UI/Resources/Textures/logo.png
       - 2D Art/UI/Resources/Textures/main_menu_mask.png
       - 2D Art/UI/Resources/Textures/new_icon.png
       - 2D Art/UI/Resources/Textures/pointer2.png
       - 2D Art/UI/Resources/Textures/progress_deep.png
       - 2D Art/UI/Resources/Textures/progress_line.png
       - 2D Art/UI/Resources/Textures/r_button.png
+      - 2D Art/UI/Resources/Textures/recallar_transparent.png
       - 2D Art/Warning_Options_Text
       - 2D Art/Warning_Options_Text/Resources
       - 2D Art/Warning_Options_Text/Resources/Fonts
@@ -96,8 +108,11 @@ CollapsedEntities:
       - 2D Art/Warning_Pace_Limit/glowBG.mat
       - 2D Art/Warning_Pace_Limit/glow_m.png
       - 2D Art/Warning_Pace_Limit/pace_warning.png
+      - 3D Art/Arrow_UI_Start_v3
+      - 3D Art/Arrow_UI_Start_v3/Materials
       - 3D Art/Arrow_UI_Start_v3/Materials/Circle Material.mat
       - 3D Art/Arrow_UI_Start_v3/Materials/Ground_Arrow_UI.mat
+      - 3D Art/Arrow_UI_Start_v3/Meshes
       - 3D Art/Arrow_UI_Start_v3/Meshes/Arrow_UI_Start_v1.fbx
       - 3D Art/Arrow_UI_Start_v3/Meshes/Arrow_UI_Start_v1.fbx/.hidden
       - 3D Art/Arrow_UI_Start_v3/Meshes/Arrow_UI_Start_v1.fbx/.hidden/lambert26
@@ -110,10 +125,11 @@ CollapsedEntities:
       - 3D Art/Arrow_UI_Start_v3/Meshes/Arrow_UI_Start_v1.fbx/Meshes
       - 3D Art/Arrow_UI_Start_v3/Meshes/Arrow_UI_Start_v1.fbx/Meshes/GroundArrow_UI
       - 3D Art/Arrow_UI_Start_v3/Meshes/Plane.mesh
+      - 3D Art/Arrow_UI_Start_v3/Shaders
       - 3D Art/Arrow_UI_Start_v3/Shaders/Circle.ss_graph
       - 3D Art/Arrow_UI_Start_v3/Shaders/Ground_Arrow_UI.ss_graph
+      - 3D Art/Arrow_UI_Start_v3/Textures
       - 3D Art/Arrow_UI_Start_v3/Textures/Arrows_RGBA_v1.png
-      - 3D Art/Holo_Starting_Line_V2
       - 3D Art/Holo_Starting_Line_V2/Holo_Starting_Line
       - 3D Art/Holo_Starting_Line_V2/Holo_Starting_Line/Materials
       - 3D Art/Holo_Starting_Line_V2/Holo_Starting_Line/Materials/Holo_Starting_Line_V3.png
@@ -130,7 +146,6 @@ CollapsedEntities:
       - 3D Art/Holo_Starting_Line_V2/Holo_Starting_Line/Meshes/Holo_Projection_Line.mesh
       - 3D Art/Holo_Starting_Line_V2/Holo_Starting_Line/Meshes/Holo_Starting_Line.mesh
       - 3D Art/Holo_Starting_Line_V2/Holo_Starting_Line/Meshes/Holo_Verical_Line.mesh
-      - 3D Art/Holo_Starting_Line_V2/Path_Pioneer_3DText
       - 3D Art/Holo_Starting_Line_V2/Path_Pioneer_3DText/AvenirNextLTPro-HeavyCnIt.otf
       - 3D Art/Holo_Starting_Line_V2/Path_Pioneer_3DText/Text3D_hint.mat
       - 3D Art/Holo_Starting_Line_V2/Path_Pioneer_3DText/Text3D_real.mat
@@ -143,7 +158,6 @@ CollapsedEntities:
       - 3D Art/Loop LockAsset/Resources/Meshes/Plane.mesh
       - 3D Art/Loop LockAsset/Resources/Shaders
       - 3D Art/Loop LockAsset/Resources/Shaders/LapLockArea.ss_graph
-      - 3D Art/Path_Tutorial_Pack
       - 3D Art/Path_Tutorial_Pack/Materials
       - 3D Art/Path_Tutorial_Pack/Materials/Human_Matcap.mat
       - 3D Art/Path_Tutorial_Pack/Materials/Human_Matcap.ss_graph
@@ -219,11 +233,9 @@ CollapsedEntities:
       - 3D Art/Path_Tutorial_Pack/Path_Tutorial_Pack.prefab
       - 3D Art/Path_Tutorial_Pack/Scripts
       - 3D Art/Path_Tutorial_Pack/Scripts/Wired Parameters.lsc
-      - 3D Art/Path_Tutorial_Pack/Textures
       - 3D Art/Path_Tutorial_Pack/Textures/AvenirNextLTPro-Heavy.otf
       - 3D Art/Path_Tutorial_Pack/Textures/Human_Plastic_Matcap.jpg
       - 3D Art/Path_Tutorial_Pack/Textures/Track_Opacity_Line.png
-      - 3D Art/Path_Tutorial_Pack/Textures/Track_Opaticy_Dots.png
       - 3D Art/Path_Tutorial_Pack/Textures/Track_Tutorial_Blur.png
       - 3D Art/Side_Double_Arrows_Tile
       - 3D Art/Side_Double_Arrows_Tile/Side_Double_Arrows_Tile
@@ -240,14 +252,10 @@ CollapsedEntities:
       - 3D Art/Unit Plane
       - 3D Art/Unit Plane/Meshes
       - 3D Art/Unit Plane/Meshes/Unit Plane.mesh
-      - Materials
-      - Materials/PathBuilderUnlit_v2
+      - Image.mat
+      - Image.png
       - Materials/PathBuilderUnlit_v2/Arrows_RGBA_v1.png
-      - Materials/PathBuilderUnlit_v2/Materials
-      - Materials/PathBuilderUnlit_v2/Materials/PathBuilderTest
       - Materials/PathBuilderUnlit_v2/Materials/PathBuilderTest/PathBuilderUnlit.ss_graph
-      - Materials/PathBuilderUnlit_v2/Materials/PathBuilderTest/PathBuilderUnlit_cyan.mat
-      - Materials/PathBuilderUnlit_v2/Materials/PathBuilderTest/PathBuilderUnlit_cyan_head.mat
       - Materials/PathBuilderUnlit_v2/Materials/PathBuilderTest/PathBuilderUnlit_sphere.mat
       - Materials/PathBuilderUnlit_v2/Sphere_0000.png
       - Materials/Side_Arrow_Occlusion_v2
@@ -316,10 +324,13 @@ CollapsedEntities:
       - Sfx/420738-Card-Game-UI-General-Tiny-Metal-01.1.mp3
       - Sfx/CountdownSFX_1.mp3
       - Sfx/music_loop_dlp_1.mp3
+      - SpectaclesInteractionKit.lspkg
+      - SpectaclesInteractionKit.lspkg/Assets
       - SpectaclesInteractionKit.lspkg/Assets/Audio
       - SpectaclesInteractionKit.lspkg/Assets/Audio/HoverAudioTrack.wav
       - SpectaclesInteractionKit.lspkg/Assets/Audio/TriggerEndAudioTrack.wav
       - SpectaclesInteractionKit.lspkg/Assets/Audio/TriggerStartAudioTrack.wav
+      - SpectaclesInteractionKit.lspkg/Assets/Materials
       - SpectaclesInteractionKit.lspkg/Assets/Materials/BaseHandVisualsMaterials
       - SpectaclesInteractionKit.lspkg/Assets/Materials/BaseHandVisualsMaterials/FingerHighlightLeft.mat
       - SpectaclesInteractionKit.lspkg/Assets/Materials/BaseHandVisualsMaterials/FingerHighlightRight.mat
@@ -329,6 +340,7 @@ CollapsedEntities:
       - SpectaclesInteractionKit.lspkg/Assets/Materials/BaseHandVisualsMaterials/NoDraw.mat
       - SpectaclesInteractionKit.lspkg/Assets/Materials/BitmojiMaterial.mat
       - SpectaclesInteractionKit.lspkg/Assets/Materials/ContainerImageMaterial.mat
+      - SpectaclesInteractionKit.lspkg/Assets/Materials/LogoMaterial.mat
       - SpectaclesInteractionKit.lspkg/Assets/Materials/NormalBasedTargetOutline.mat
       - SpectaclesInteractionKit.lspkg/Assets/Materials/PinchButtonDarkInactive.mat
       - SpectaclesInteractionKit.lspkg/Assets/Materials/PinchButtonDarkRadial.mat
@@ -400,6 +412,7 @@ CollapsedEntities:
       - SpectaclesInteractionKit.lspkg/Assets/Meshes/SnapGhost_Mesh.mesh
       - SpectaclesInteractionKit.lspkg/Assets/Meshes/SphereMesh.mesh
       - SpectaclesInteractionKit.lspkg/Assets/Meshes/Uncheck.mesh
+      - SpectaclesInteractionKit.lspkg/Assets/Shaders
       - SpectaclesInteractionKit.lspkg/Assets/Shaders/BaseHandVisualsShaders
       - SpectaclesInteractionKit.lspkg/Assets/Shaders/BaseHandVisualsShaders/FingerHighlightAdd.ss_graph
       - SpectaclesInteractionKit.lspkg/Assets/Shaders/BaseHandVisualsShaders/FingerHighlightOpaque.ss_graph
@@ -442,6 +455,7 @@ CollapsedEntities:
       - SpectaclesInteractionKit.lspkg/Assets/Shaders/ToggleOn.ss_graph
       - SpectaclesInteractionKit.lspkg/Assets/Shaders/ToggleOnSelect.ss_graph
       - SpectaclesInteractionKit.lspkg/Assets/Shaders/simple_pbr.ss_graph
+      - SpectaclesInteractionKit.lspkg/Assets/Textures
       - SpectaclesInteractionKit.lspkg/Assets/Textures/2DBitmojiAvatar.png
       - SpectaclesInteractionKit.lspkg/Assets/Textures/Base.png
       - SpectaclesInteractionKit.lspkg/Assets/Textures/BaseHandVisualsTextures
@@ -466,6 +480,7 @@ CollapsedEntities:
       - SpectaclesInteractionKit.lspkg/Assets/Textures/Rectangle-Inactive.png
       - SpectaclesInteractionKit.lspkg/Assets/Textures/Rectangle.png
       - SpectaclesInteractionKit.lspkg/Assets/Textures/SIKContainerExampleImage.jpg
+      - SpectaclesInteractionKit.lspkg/Assets/Textures/SIKLogo.png
       - SpectaclesInteractionKit.lspkg/Assets/Textures/ScrollBarRectangle.png
       - SpectaclesInteractionKit.lspkg/Components
       - SpectaclesInteractionKit.lspkg/Components/Helpers
@@ -731,6 +746,10 @@ CollapsedEntities:
       - SpectaclesInteractionKit.lspkg/VersionNumber.ts
       - SpectaclesInteractionKit.lspkg/package.native
       - SpectaclesInteractionKit.lspkg/tsconfig.json
+      - SpectaclesInteractionKitExamples.lspkg
+      - SpectaclesInteractionKitExamples.lspkg/Examples
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Icons
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Icons/ModernBodyTube_icon.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Icons/ModernFins_icon.mat
@@ -741,6 +760,7 @@ CollapsedEntities:
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Icons/SpaceAgeBodyTube_icon.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Icons/SpaceAgeFins_icon.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Icons/SpaceAgeNoseCone_icon.mat
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Meteor.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Planet.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Planet_rings.mat
@@ -754,7 +774,9 @@ CollapsedEntities:
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Rocket_plastic_01.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Rocket_plastic_02.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Rocket_plastic_03.mat
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Rocket_plastic_03_logo.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Rocket_white.mat
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Rocket_white_logo.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Materials/Objects/SIK_Satellite_blue.mat
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Meshes
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Meshes/Bases.fbx
@@ -839,12 +861,15 @@ CollapsedEntities:
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Shaders/Planet_rings.ss_graph
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Shaders/Platform.ss_graph
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Shaders/Rocket.ss_graph
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/A-icon.png
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/B-icon.png
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/C-icon.png
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/SIK_Meteor_bc.png
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/SIK_Platforms_AO.jpg
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/SIK_Rockets_AO.jpg
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/SIK_Snap_logo.png
+      - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/SIK_Space_logo_TEMP.png
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/ScrollViewThumbnails
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/ScrollViewThumbnails/body-tube_rocket-A.png
       - SpectaclesInteractionKitExamples.lspkg/Examples/RocketWorkshop/Textures/ScrollViewThumbnails/body-tube_rocket-B.png

@@ -103,32 +103,12 @@ export class LineController extends BaseScriptComponent {
   }
 
   private startCountDown() {
-    const delay = 1
-    for (let i = 0; i < this.countdownSoArray.length + 1; i++) {
-      const evt = this.createEvent("DelayedCallbackEvent")
-      evt.bind(() => {
-        this.countdownSoArray.forEach((so) => {
-          so.enabled = false
-        })
-
-        if (i == 0) {
-          SoundController.getInstance().playSound("onCountdown")
-        }
-
-        if (i < this.countdownSoArray.length) {
-          this.countdownSo.enabled = true
-          this.countdownSoArray[i].enabled = true
-        }
-
-        if (i == this.countdownSoArray.length) {
-          this.countdownSo.enabled = false
-        }
-      })
-      evt.reset(delay * i)
-    }
-
-    // return delay
-    return delay * (this.countdownSoArray.length + 1)
+    // 移除了倒计时的视觉和音效，只保留一次“叮”的音效。
+    // 如果你还需要播放“叮”的声音，可以保留下面这行，或者换成你想要的 sound key。
+    SoundController.getInstance().playSound("onStartLap")
+    
+    // 直接返回 0 毫秒的延迟，跳过原来的视觉倒数
+    return 0;
   }
 
   onStartSprint() {

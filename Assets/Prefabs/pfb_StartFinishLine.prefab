@@ -311,7 +311,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 180.000000, y: -0.000000, z: 180.000000}
-    Scale: {x: 10.400000, y: 10.400000, z: 10.400000}
+    Scale: {x: 5.000000, y: 10.400000, z: 10.400000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> dfba998e-e845-4167-a1b9-9ad5afe87b03
@@ -585,7 +585,7 @@
   ShadowDensity: 1.000000
   Materials:
     - !<reference> 8019986c-b9f7-4c3c-9d0b-37040da711d2
-  Text: FINISH
+  Text: Bathroom
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -722,7 +722,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 3.678533, z: 1.000000}
+    Scale: {x: 1.000000, y: 5.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -742,12 +742,12 @@
   ShadowDensity: 1.000000
   Materials:
     - !<reference> 6922cf38-602b-4c7e-83ec-e1e75e39eed2
-  Text: FINISH
+  Text: Bathroom
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 48
+  FontSize: 50
   ExtrusionDepth: 0.080000
   ExtrudeDirection: Both
   Font: !<reference> c5d037b4-84e2-421f-bb89-91d7458fcf6b
@@ -773,7 +773,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 180.000000, y: -0.000000, z: 180.000000}
-    Scale: {x: 10.400000, y: 10.400000, z: 10.400000}
+    Scale: {x: 5.000000, y: 10.400000, z: 10.400000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 6976b57f-2fdb-4754-96c4-595705f9b1ee
@@ -1028,7 +1028,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 11.505072, z: 0.000001}
+    Position: {x: 0.000000, y: 11.495100, z: 0.000001}
     Rotation: {x: -0.000010, y: -0.000005, z: 0.000010}
     Scale: {x: 1.075001, y: 0.340000, z: 0.200000}
     HasSegmentScaleCompensation: false

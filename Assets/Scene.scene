@@ -1820,7 +1820,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: WALK THROUGH TO START!
+  Text: ARRIVED!
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3430,7 +3430,7 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 10.434073, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 20.000000, y: 20.000000, z: 20.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -3501,7 +3501,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: "TOTAL DISTANCE:"
+  Text: Bathroom
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4419,12 +4419,12 @@
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 40.000000, y: 40.000000, z: 40.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> f2c88c21-b2f2-425e-ac0e-9343c9edd3a0
   Components:
-    []
+    - !<own> ece92394-15c8-495d-a1f4-bf00470e7355
 - !<SceneObject/63839a46-512f-4957-a5ec-1ccf519b96a8>
   PrefabRemaps:
     []
@@ -4586,9 +4586,9 @@
   Enabled: true
   Layers: 8
   LocalTransform: !<TransformEntity>
-    Position: {x: -6.989045, y: 8.063811, z: 0.000000}
+    Position: {x: -6.989045, y: 7.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Scale: {x: 20.000000, y: 20.000000, z: 20.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -8359,7 +8359,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: 3072
+  Text: ""
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -10752,6 +10752,25 @@
     []
   Components:
     - !<own> 00293bdb-16b8-4916-9863-c771a5ce3c61
+- !<Image/ece92394-15c8-495d-a1f4-bf00470e7355>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7ec5ab11-3ff3-4fd1-9c76-a71f3a1b800f
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<LightSource/ed39123e-1580-42ad-81bd-895641680076>
   PrefabRemaps:
     []
